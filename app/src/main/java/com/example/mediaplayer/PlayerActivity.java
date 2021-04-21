@@ -253,7 +253,7 @@ public class PlayerActivity extends AppCompatActivity implements ActionPlaying, 
         }
     }
 
-    public void nextBtnClicked() {
+    public  void nextBtnClicked() {
         if (musicService.isPlaying()){
             musicService.stop();
             musicService.release();
@@ -333,7 +333,7 @@ public class PlayerActivity extends AppCompatActivity implements ActionPlaying, 
         playThread.start();
     }
 
-    public void playPauseBtnClicked() {
+    public  void playPauseBtnClicked() {
         if (musicService.isPlaying()){
             playPauseBtn.setImageResource(R.drawable.ic_baseline_play_circle_filled_24);
             musicService.showNotification(R.drawable.ic_baseline_play_circle_filled_24);

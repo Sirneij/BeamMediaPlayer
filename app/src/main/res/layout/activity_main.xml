@@ -30,5 +30,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:id="@+id/frag_bottom_player"/>
+        android:id="@+id/frag_bottom_player">
+        <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.example.mediaplayer.NowPlayingFragmentBottom"
+                tools:layout="@layout/fragment_now_playing_bottom" android:visibility="invisible"/>
+    </FrameLayout>
 </RelativeLayout>
